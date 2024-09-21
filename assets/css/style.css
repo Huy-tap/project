@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  /* bài 48 */
+}
+html {
+  font-size: 62.5%;
+  /* quy đổi ra 10 bài 56 */
+}
+body {
+  font-size: 1.6rem;
+}
