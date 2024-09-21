@@ -8,4 +8,85 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.bth {
+  display: inline-block;
+  color: #fff;
+  line-height: 50px;
+  min-width: 118px;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+}
+/* ========comam===== */
+a {
+  text-decoration: none;
+  /* bỏ gạch chân */
+}
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 46px);
+  /* mỗi bên thụt vào chưa ra 46px */
+}
+.header.fixed {
+  top: -28px;
+  position: sticky;
+}
+.header {
+  background-color: #fffcf4;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+  /* xem lại bài 48.10 và 89.10 để hiểu thêm */
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  /* text-align: center; luôn bằng thẻ box chưa nó nên không cần */
+  font-size: 1.6rem;
+  /* font-style: normal; mặc định trình duyệt rồi */
+  /* font-weight: 400; */
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0px currentColor;
+  /* text-shadow đổ bóng các chữ */
+}
+
+.nav li.active a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  left: 21px;
+  bottom: 6px;
+}
+.header .bth-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }
