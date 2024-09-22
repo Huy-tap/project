@@ -36,6 +36,14 @@ a {
   text-decoration: none;
   /* bỏ gạch chân */
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
+}
 .main-content {
   width: 1170px;
   margin-left: auto;
@@ -244,4 +252,45 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* =======populab===== */
+
+.pupolar {
+  padding: 65px 0px;
+}
+
+.pupolar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pupolar .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  width: 458px;
+}
+
+.pupolar-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+.pupolar-top .control {
+  display: flex;
+  gap: 18px;
+  /* tạo khoảng trống ở giữa */
+}
+.pupolar-top .control-btn:hover {
+  background-color: var(--btn-color);
+  color: #fff;
+  cursor: pointer;
 }
