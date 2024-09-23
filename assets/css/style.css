@@ -52,6 +52,19 @@ a {
   max-width: calc(100% - 46px);
   /* mỗi bên thụt vào chưa ra 46px */
 }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 .header.fixed {
   top: -28px;
   position: sticky;
@@ -310,6 +323,8 @@ a {
   border-radius: 12px 12px 0px 0px;
 }
 .pupolar .course-item {
+  flex: 1;
+  /* có nghĩa là flex grow 1, flex shiw 1, flex bassi 0 */
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
