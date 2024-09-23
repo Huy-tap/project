@@ -26,6 +26,7 @@ body {
   font-weight: 600;
   border-radius: 999px;
   background: #171100;
+  cursor: pointer;
 }
 
 .bth:hover {
@@ -257,6 +258,7 @@ a {
 /* =======populab===== */
 
 .pupolar {
+  margin-top: 135px;
   padding: 65px 0px;
 }
 
@@ -265,7 +267,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.pupolar .desc {
+.pupolar-top .desc {
   color: #5f5b53;
   font-size: 1.8rem;
   font-weight: 400;
@@ -293,4 +295,83 @@ a {
   background-color: var(--btn-color);
   color: #fff;
   cursor: pointer;
+}
+.pupolar .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+
+  /* gap là cách đều các phần tử */
+}
+.pupolar .course-item .thumb {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+.pupolar .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.pupolar .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.pupolar .course-item .info {
+  /* background-color: red; */
+  padding: 16px 22px 22px;
+}
+
+.pupolar .course-item .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pupolar .course-item .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pupolar .course-item .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.pupolar .rating .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.pupolar .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.pupolar .course-item .foot {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pupolar .foot .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.pupolar .foot .bth-book {
+  border: none;
+}
+
+.pupolar .foot .bth-book:hover {
+  background: #ffb900;
 }
