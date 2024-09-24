@@ -397,8 +397,14 @@ a {
   padding: 96px 0;
   background-color: #2e2100;
 }
-.feed-item {
+.feed-list {
   display: flex;
+  overflow: hidden;
+}
+.feed-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feed-item .avatar {
   width: 72px;
