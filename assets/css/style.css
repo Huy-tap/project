@@ -507,3 +507,38 @@ a {
   width: 137px;
   height: 50px;
 }
+
+/* =======features 2===== */
+.features-l2 {
+  padding: 65px 0;
+  margin-top: 70px;
+}
+.features-l2 .body {
+  display: flex;
+  justify-content: space-between;
+}
+.features-l2 .content {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features-l2 .content .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.features-l2 .body img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.features-l2 .body .bth-join {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background-color: var(--btn-color);
+}
